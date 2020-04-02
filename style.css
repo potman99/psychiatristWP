@@ -8,7 +8,6 @@ html {
 }
 
 .navBar {
-  background-color: red;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,7 +18,6 @@ html {
 }
 
 .navBar ul {
-  background-color: green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,30 +27,79 @@ html {
 .navBar ul .navItem {
   padding: 10px;
   margin: 2px;
-  background-color: yellow;
 }
 
 .homeContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.homeContainer .leftContainer {
-  background-color: yellowgreen;
+.homeContainer .topContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.homeContainer .topContainer .leftContainer {
   width: 40%;
 }
 
-.homeContainer .leftContainer #brainImg {
-  height: 400px;
-  width: 300px;
+.homeContainer .topContainer .leftContainer #brainImg {
+  height: 300px;
+  width: 450px;
 }
 
-.homeContainer .rightContainer {
+.homeContainer .topContainer .rightContainer {
   width: 40%;
-  background-color: purple;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeContainer .topContainer .rightContainer .nameHeader {
+  font-size: 40px;
+}
+
+.homeContainer .botContainer {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.homeContainer .botContainer .descItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
 }
 /*# sourceMappingURL=style.css.map */

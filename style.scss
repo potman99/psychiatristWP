@@ -8,19 +8,16 @@ html{
 }
 
 .navBar{
-    background-color: red;
     width: 80%;
     display: flex;
     justify-content: flex-end;
     
     ul{
-        background-color: green;
         display: flex;
         list-style: none;
         .navItem{
             padding: 10px;
             margin: 2px;
-            background-color: yellow;
         }
     }
 
@@ -30,19 +27,54 @@ html{
 .homeContainer{
 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 
-    .leftContainer{
-        background-color: yellowgreen;
-        width: 40%;
-        #brainImg{
-            height: 400px;
-            width: 300px;
+    .topContainer{
+
+        display: flex;
+        justify-content: space-around;
+
+
+        .leftContainer{
+            width: 40%;
+            #brainImg{
+                height: 300px;
+                width: 450px;
+            }
+        }
+    
+        .rightContainer{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .nameHeader{
+                font-size: 40px;
+            }
+
+            .nameDesc{
+
+            }
         }
     }
+    .botContainer{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
 
-    .rightContainer{
-        width: 40%;
-        background-color: purple;
+        .descItem{
+
+            .descHeader{
+
+            }
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+        }
     }
 }
