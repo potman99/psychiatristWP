@@ -1,3 +1,48 @@
-h1{
-    color: blue;
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navBar{
+    background-color: red;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    
+    ul{
+        background-color: green;
+        display: flex;
+        list-style: none;
+        .navItem{
+            padding: 10px;
+            margin: 2px;
+            background-color: yellow;
+        }
+    }
+
+    
+}
+
+.homeContainer{
+
+    display: flex;
+    justify-content: space-between;
+
+    .leftContainer{
+        background-color: yellowgreen;
+        width: 40%;
+        #brainImg{
+            height: 400px;
+            width: 300px;
+        }
+    }
+
+    .rightContainer{
+        width: 40%;
+        background-color: purple;
+    }
 }
