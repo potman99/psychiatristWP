@@ -11,13 +11,13 @@
     <nav class="navBar">
         <ul>
             <li class="navItem">
-                <a href="#">O MNIE</a>
+                <a href="#descSection">O MNIE</a>
             </li>
             <li class="navItem">
-                <a href="#">KONTAKT</a>
+                <a href="#conntactSection">KONTAKT</a>
             </li>
             <li class="navItem">
-                <a href="#">DOJAZD</a>
+                <a href="#mapSection">DOJAZD</a>
             </li>
         </ul>
     </nav>
@@ -28,7 +28,7 @@
                     quis magni repudiandae voluptatem, id dolorem odio.
                     Voluptates deleniti, hic neque ipsum harum at? Nulla, sint?
                 </h4>
-                <button>WIĘCEJ</button>
+                <button id="btnMore">WIĘCEJ</button>
         </div>
         <div class="rightContainer">
             <img src="./img/brain .png">
@@ -41,21 +41,61 @@
 <!--    Start of Info/Desc Section-->
 
 
-    <div class="botContainer">
-        <div class="descItem">
-            <div class="header">
-                <i class="fas fa-briefcase-medical"></i>
-                <h3 class="descHeader">Nagłówek</h3>
+    <div class="descSection">
+        <h2 id="descSection" class="sectionHeader">O MNIE</h2>
+            <div class="descContainer">
+                <div class="descItem">
+                    <div class="header">
+                        <i class="fas fa-briefcase-medical"></i>
+                        <h3 class="descHeader">Nagłówek</h3>
+                    </div>    
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat quae animi sapiente eveniet id, omnis adipisci delectus mollitia maiores laboriosam dolorum fuga fugiat, eius, laborum officia atque debitis labore unde.</p>
+                </div>
+                <div class="descItem">
+                    <div class="header">
+                        <i class="fas fa-briefcase-medical"></i>
+                        <h3 class="descHeader">Nagłówek</h3>
+                    </div>    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptates sint fuga quos repellat officia itaque tempore natus reprehenderit adipisci, porro fugiat placeat iste nisi animi nam aspernatur similique sapiente?</p>
+                </div>
+                <div class="descItem">
+                    <div class="header">
+                        <i class="fas fa-briefcase-medical"></i>
+                        <h3 class="descHeader">Nagłówek</h3>
+                    </div>    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptates sint fuga quos repellat officia itaque tempore natus reprehenderit adipisci, porro fugiat placeat iste nisi animi nam aspernatur similique sapiente?</p>
+                </div>
             </div>    
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat quae animi sapiente eveniet id, omnis adipisci delectus mollitia maiores laboriosam dolorum fuga fugiat, eius, laborum officia atque debitis labore unde.</p>
+    </div>
+    
+<!--    END OF LANDING SECTION  -->
+<!-------------------------------->
+<!--    Start of Info/Desc Section-->
+
+    <div class="conntactSection">
+        <h2 id="conntactSection" class="sectionHeader">KONTAK</h2>
+    </div>
+
+
+<!--    END OF LANDING SECTION  -->
+<!-------------------------------->
+<!--    Start of Info/Desc Section-->
+
+    <div class="mapSection">
+        <h2 id="mapSection" class="sectionHeader">DOJAZD</h2>
+        <div class="mapContainer">
+            <div id="map"></div>
+            <button id="directBtn">PROWADŹ</button>
         </div>
-        <div class="descItem">
-            <div class="header">
-                <i class="fas fa-briefcase-medical"></i>
-                <h3 class="descHeader">Nagłówek</h3>
-            </div>    
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptates sint fuga quos repellat officia itaque tempore natus reprehenderit adipisci, porro fugiat placeat iste nisi animi nam aspernatur similique sapiente?</p>
-        </div>
-    </div>    
+    </div>
+
+
+    <!--    Footer      -->
+    <footer></footer>
+
+<!--    JAVA SCRIPT-->
+<script src="script.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU4tmBmAzqW5mH3Lj_jK680FmhBRu0WT8&callback=initMap"
+type="text/javascript"></script>
 </body>
 </html>
