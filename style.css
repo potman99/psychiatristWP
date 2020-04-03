@@ -8,13 +8,20 @@ html {
 }
 
 .navBar {
-  width: 80%;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  width: 100%;
+  height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 3;
+  background-color: pink;
 }
 
 .navBar ul {
@@ -22,42 +29,31 @@ html {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-}
-
-.navBar ul .navItem {
-  padding: 10px;
-  margin: 2px;
-}
-
-.homeContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 25%;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.homeContainer .topContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-.homeContainer .topContainer .leftContainer {
-  width: 40%;
+.navBar ul .navItem {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 20px;
+  width: 5em;
+  height: 2em;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20%;
 }
 
-.homeContainer .topContainer .leftContainer #brainImg {
-  height: 300px;
-  width: 450px;
-}
-
-.homeContainer .topContainer .rightContainer {
-  width: 40%;
+.homeContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,10 +67,43 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 100vh;
+  width: auto;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.52)), to(rgba(0, 0, 0, 0.829))), url("img/bg.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.829)), url("img/bg.jpg");
+  background-attachment: fixed;
+  background-position-x: center;
+  z-index: 1;
 }
 
-.homeContainer .topContainer .rightContainer .nameHeader {
+.homeContainer .topContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1%;
+}
+
+.homeContainer .topContainer .nameHeader {
   font-size: 40px;
+  font-family: 'Archivo Black', sans-serif;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 10%;
+}
+
+.homeContainer .topContainer button {
+  font-size: 25px;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+  background-color: #5ca8ff;
+  color: white;
+  padding: 2%;
+  margin-top: 5%;
+  border-radius: 20%;
 }
 
 .homeContainer .botContainer {
@@ -84,6 +113,10 @@ html {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
 }
 
 .homeContainer .botContainer .descItem {
@@ -100,6 +133,30 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30%;
+  width: 20%;
+}
+
+.homeContainer .botContainer .descItem .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+}
+
+.homeContainer .botContainer .descItem .header i {
+  color: #5ca8ff;
+  font-size: 25px;
+}
+
+.homeContainer .botContainer .descItem .header .descHeader {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  padding: 5%;
 }
 /*# sourceMappingURL=style.css.map */
