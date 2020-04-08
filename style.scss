@@ -2,6 +2,17 @@ $pinkColor: rgb(226, 170, 201);
 $headerFont:  'Righteous', cursive;
 $darkPink: rgb(141, 71, 132);
 
+
+//  Global Classes  ///////////
+///////////////////////////////
+.sectionHeader{
+    font-family: $headerFont;
+    
+}
+
+//////////////////////////////
+
+
 *{
     padding: 0;
     margin: 0;
@@ -22,7 +33,7 @@ $darkPink: rgb(141, 71, 132);
         align-items: center;
         justify-content: center;
         list-style: none;
-        width: 30%;
+        width: 40%;
 
         .navItem{
             padding: 2%;
@@ -39,6 +50,21 @@ $darkPink: rgb(141, 71, 132);
                 }
             }
         }
+    }
+}
+
+.burger{
+    display: none;
+}
+
+.homeBtn{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    i{
+        color: black;
+        font-size: 2em;
+        cursor: pointer;
     }
 }
 
@@ -69,6 +95,7 @@ $darkPink: rgb(141, 71, 132);
 
         button{
             background-color: white;
+            border-radius: 2%;
             border: none;
             padding: 2%;
             width: 50%;
@@ -91,5 +118,122 @@ $darkPink: rgb(141, 71, 132);
             width: 80%;
             height:80%;
         }
+    }
+}
+
+.descSection{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    .descContainer{
+
+        display: flex;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+    
+    
+        .descItem{
+    
+            .header{
+    
+                display: flex;
+                justify-content: space-around;
+    
+                i{
+                    font-size: 1.5em;
+                    color: $darkPink;
+                }
+    
+                .descHeader{
+                    font-size: 1.5em;
+                    font-family: $headerFont;
+                }
+            }
+        }
+    }
+
+}
+
+.conntactSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapSection{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .mapContainer{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        #map{
+            width: 500px;
+            height: 400px;
+            background-color: gray;
+            margin-right: 10vw;
+        }
+
+            #directBtn{
+                background-color: $darkPink;
+                border-radius: 4%;
+                border: none;
+                padding: 2%;
+                width: 30%;
+                font-family: $headerFont;
+                cursor: pointer;
+            }
+
+
+    }
+}
+
+footer{
+    background-color: $darkPink;
+    width: 100%;
+    height: 10vh;
+}
+
+
+////////////////////
+// Media Querries //
+////////////////////
+
+@media screen and (max-width: 768px){
+    body{
+        //overflow-x: hidden;
+    }
+    .navBar{
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        height: 90vh;
+        top: 0;
+        width: 80vw;
+        background-color: $darkPink;
+        display: flex;
+        justify-content: center;
+        transform: translate(100%);
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .burger{
+        display: block;
+        position: absolute;
+        right: 82vw;
+        top: 2vh;
     }
 }
