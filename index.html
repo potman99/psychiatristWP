@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navBar" id="home">
+    <nav class="navBar">
         <ul>
             <li class="navItem">
                 <a href="#descSection">O MNIE</a>
@@ -21,19 +21,23 @@
             </li>
         </ul>
 
-        <div class="burger">
+        <div class="menuOpen">
             <i class="fas fa-bars"></i>
         </div>
+
+        <div class="menuClose">
+            <i class="fas fa-times"></i> 
+        <div>
     </nav>
   
-    <div class="homeContainer">
+    <div class="homeContainer" id="home">
         <div class="leftContainer rellax" data-rellax-speed="10">
                 <h2 class="nameHeader">RENATA POTOCKA</h2>
-                <h4 class="nameDesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo atque placeat earum quidem maiores
-                    quis magni repudiandae voluptatem, id dolorem odio.
-                    Voluptates deleniti, hic neque ipsum harum at? Nulla, sint?
+                <h4 class="nameDesc">lekarz psychiatra
                 </h4>
-                <button id="btnMore">WIĘCEJ</button>
+                <button id="btnMore">
+                    <a href="#descSection">WIĘCEJ</a>
+                </button>
         </div>
         <div class="rightContainer rellax" data-rellax-speed="0">
             <img src="./img/brain .png">
@@ -104,8 +108,7 @@
 
     <!--    Footer      -->
     <footer>
-        <hr>
-        Copyright © 2020 Renata Potocka
+        <p>Copyright © 2020 Renata Potocka</p>
     </footer>
 
 <!--    JAVA SCRIPT-->
