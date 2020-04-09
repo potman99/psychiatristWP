@@ -66,6 +66,7 @@ menuCloseBtn.addEventListener('click',()=>{
 menuOpenBtn.addEventListener('click',()=>{
     navBar.classList.remove('navBarClose');
     navBar.classList.add('navBarActive');
+    console.log("ELO");
     
 });
 
@@ -86,3 +87,15 @@ window.onscroll = ()=>{
     
 }
 
+
+const redirectBtn = document.querySelectorAll('.navItem');
+
+
+redirectBtn.forEach((item)=>{
+    item.addEventListener('click',()=>{
+        console.log("nav");
+        
+        navBar.classList.add('navBarClose');
+        navBar.classList.remove('navBarActive');
+    });
+});
