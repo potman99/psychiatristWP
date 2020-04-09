@@ -15,7 +15,7 @@ function initMap(){
 
     var map = new google.maps.Map(
         mapDOM,
-        {zoom:18,center:pos}
+        {zoom:17,center:pos}
     );
 
     var contentString = `<h2><a href=${posLink}>Sienkiewicza 80,<br> 27-400, Ostrowiec Świętokrzyski</a></h2>`

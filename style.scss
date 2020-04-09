@@ -18,7 +18,7 @@ $darkPink: rgb(141, 71, 132);
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
+    -webkit-overflow-scrolling: touch;
 }
 
 .navBar{
@@ -330,8 +330,6 @@ footer{
         height: 100vh;
         top: 0;
         width: 100vw;
-        border-bottom-left-radius: 4%;
-        border-top-left-radius: 4%;
         background-color: $darkPink;
         display: flex;
         justify-content: center;
