@@ -11,6 +11,9 @@
     <nav class="navBar">
         <ul>
             <li class="navItem">
+                <a href="#newsSection">AKTUALNOŚCI</a>
+            </li>
+            <li class="navItem">
                 <a href="#descSection">O MNIE</a>
             </li>
             <li class="navItem">
@@ -31,7 +34,7 @@
     </nav>
   
     <div class="homeContainer" id="home">
-        <div class="leftContainer rellax" data-rellax-speed="10">
+        <div class="leftContainer rellax" data-rellax-speed="10" data-rellax-mobile-speed="0" data-rellax-xs-speed="0">
                 <h2 class="nameHeader">RENATA POTOCKA</h2>
                 <h4 class="nameDesc">lekarz psychiatra
                 </h4>
@@ -54,6 +57,23 @@
 <!--    END OF LANDING SECTION  -->
 <!-------------------------------->
 <!--    Start of Info/Desc Section-->
+
+    <div class="newsSection">
+        <h2 id="newsSection" class="sectionHeader">AKTUALNOŚCI</h2>
+        <div class="newsContainer">
+            <div class="newsItem">
+                <div class="newsHeader"><h3>Covid 19</h3></div>
+                <div class="newsDate"><h3>08.04.2020</h3></div>
+                <div class="newsData">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus reprehenderit illo ad asperiores atque. Dicta consequatur consequuntur architecto harum atque, quibusdam iure, nostrum, tempora modi iusto cumque itaque nesciunt distinctio.</div>
+            </div>
+            <div class="newsItem">
+                <div class="newsHeader"><h3>Covid 19</h3></div>
+                <div class="newsDate"><h3>08.04.2020</h3></div>
+                <div class="newsData">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus reprehenderit illo ad asperiores atque. Dicta consequatur consequuntur architecto harum atque, quibusdam iure, nostrum, tempora modi iusto cumque itaque nesciunt distinctio.</div>
+            </div>
+        </div>
+    </div>
+       
 
 
     <div class="descSection">
@@ -89,7 +109,13 @@
 
     <div class="conntactSection">
         <h2 id="conntactSection" class="sectionHeader">KONTAK</h2>
-        <h3>tel: 505502660</h3>
+        <div class="conntactContainer">
+            <div class="conntactHeader">
+                <i class="fas fa-phone-alt"></i>
+                <h3>502598660</h3>
+            </div>
+            <button class="callBtn"><a href="tel:502598660">ZADZWOŃ</a></button> 
+        </div>
     </div>
 
 

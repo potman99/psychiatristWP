@@ -74,11 +74,11 @@ $darkPink: rgb(141, 71, 132);
 }
 
 .homeBtnIn{
-    animation: fadeIn 1s ease-in forwards;
+    animation: fadeIn 0.5s ease-in forwards;
 }
 
 .homeBtnOut{
-    animation: fadeOut 1s ease-in forwards;
+    animation: fadeOut 0.5s ease-in forwards;
 
 }
 
@@ -112,11 +112,17 @@ $darkPink: rgb(141, 71, 132);
         button{
             background-color: white;
             border-radius: 2%;
+            color: black;
             border: none;
             padding: 2%;
             width: 50%;
             font-family: $headerFont;
             cursor: pointer;
+
+            a{
+                color: black;
+                text-decoration: none;
+            }
 
             &:hover{
                 animation: btnAnim 0.5s forwards;
@@ -136,6 +142,46 @@ $darkPink: rgb(141, 71, 132);
         }
     }
 }
+
+.newsSection{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .newsContainer{
+        width: 60%;
+        .newsItem{
+            
+            background-color: rgba($darkPink, 0.3);
+            border: solid 2px $darkPink;
+            padding: 3%;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 30px;
+            margin: 1%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+            .newsHeader{
+
+                font-family: $headerFont;
+
+            }
+
+            .newsDate{
+                font-family: $headerFont;
+            }
+
+            .newsData{
+
+                grid-column-end: span 2;
+            }
+        }
+    }
+}
+
 
 .descSection{
 
@@ -177,8 +223,51 @@ $darkPink: rgb(141, 71, 132);
 
 .conntactSection{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 30vh;
+    width: 100%;
+
+    .conntactContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        margin-top: 1%;
+
+        .conntactHeader{
+            display: flex;
+            padding: 3%;
+        }
+
+        i{
+            margin-right: 5%;
+            font-size: 1.5em;
+
+        }
+
+        h3{
+            font-size: 1.3em;
+        }
+
+        .callBtn{
+        
+            background-color: $darkPink;
+            border-radius: 4%;
+            border: none;
+            padding: 2%;
+            width: 20%;
+            font-family: $headerFont;
+            cursor: pointer;
+            margin-left: 5%;
+
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .mapSection{
@@ -320,6 +409,86 @@ footer{
         }
     }
 
+
+    .homeContainer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        .leftContainer{
+            width: 80%;
+            margin-bottom: 10vh;
+            padding: 5%;
+            .nameHeader{
+                font-size: 30px;
+            }
+        }
+
+        .rightContainer{
+            width: 80%;
+            padding: 2%;
+            display: flex;
+            justify-content: center;
+
+            img{
+                width: 50%;
+                height: 40%;
+            }
+        }
+    }
+
+    .newsSection{
+
+        .newsContainer{
+            width: 80%;
+        }
+    }
+
+    
+    .descContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .conntactSection{
+        
+        .conntactContainer{
+            width: 60%;
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .conntactHeader{
+                margin-bottom: 5%;
+            }
+            .callBtn{
+                width: 40%;
+                padding: 3%;
+            }
+        }
+    }
+
+    .mapSection{
+        margin-bottom: 10%;
+        margin-top: 10%;
+        display: flex;
+        width: 100%;
+        .mapContainer{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            #map{
+                width: 100%;
+                height: 350px;
+                margin-right: 0;
+            }
+
+            button{
+                margin-top: 5%;
+            }
+        }
+    }    
     
 }
 
