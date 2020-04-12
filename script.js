@@ -3,7 +3,7 @@ const moreBtn = document.querySelector('#btnMore');
 const directBtn = document.querySelector('#directBtn');
 const scrollTopBtn = document.querySelector('.homeBtn');
 
-const posLink = "https://www.google.com/maps/place/Poczta+Polska/@50.947845,21.373203,17z/data=!4m5!3m4!1s0x0:0xf6a85261b2a6a2a0!8m2!3d50.9479652!4d21.372462?hl=pl-PL";
+const posLink = "https://www.google.com/maps/place/Henryka+Sienkiewicza+80,+27-400+Ostrowiec+%C5%9Awi%C4%99tokrzyski/@50.9477553,21.3707015,17z/data=!4m5!3m4!1s0x47180910bed63b0f:0x1cc70d19b92f7cb!8m2!3d50.9477553!4d21.3728902";
 
 
 //////////////////////
