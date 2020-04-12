@@ -9,28 +9,31 @@ const posLink = "https://www.google.com/maps/place/Henryka+Sienkiewicza+80,+27-4
 //////////////////////
 // Google Maps
 
-function initMap(){
+//let script = document.createElement('script');
 
-    var pos = {lat: 50.947788, lng: 21.372892};
 
-    var map = new google.maps.Map(
-        mapDOM,
-        {zoom:17,center:pos}
-    );
+// function initMap(){
 
-    var contentString = `<h2><a href=${posLink}>Sienkiewicza 80,<br> 27-400, Ostrowiec Świętokrzyski</a></h2>`
+//     var pos = {lat: 50.947788, lng: 21.372892};
 
-    var info = new google.maps.InfoWindow({
-        content:contentString
-    });
+//     var map = new google.maps.Map(
+//         mapDOM,
+//         {zoom:17,center:pos}
+//     );
 
-    var marker = new google.maps.Marker({
-        position: pos, map:map
-    });
+//     var contentString = `<h2><a href=${posLink}>Sienkiewicza 80,<br> 27-400, Ostrowiec Świętokrzyski</a></h2>`
 
-    info.open(map,marker);
+//     var info = new google.maps.InfoWindow({
+//         content:contentString
+//     });
 
-}
+//     var marker = new google.maps.Marker({
+//         position: pos, map:map
+//     });
+
+//     info.open(map,marker);
+
+// }
 
 ///////////////////////////
 /////   Rellax Init
