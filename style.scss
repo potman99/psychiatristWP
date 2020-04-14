@@ -1,6 +1,9 @@
 $pinkColor: rgb(226, 170, 201);
 $headerFont:  'Righteous', cursive;
+$mainFont: 'Open Sans', sans-serif;
 $darkPink: rgb(141, 71, 132);
+$sectionMargin: 10vh;
+$headerMargin: 6vh;
 
 
 //  Global Classes  ///////////
@@ -67,7 +70,7 @@ $darkPink: rgb(141, 71, 132);
     opacity: 0;
     i{
         color: black;
-        font-size: 2em;
+        font-size: 2.6em;
         cursor: pointer;
     }
     
@@ -107,6 +110,11 @@ $darkPink: rgb(141, 71, 132);
         .nameHeader{
             font-family: $headerFont;
             font-size: 40px;
+            padding: 2%;
+        }
+
+        .nameDesc{
+            font-family: $mainFont;
         }
 
         button{
@@ -115,6 +123,7 @@ $darkPink: rgb(141, 71, 132);
             color: black;
             border: none;
             padding: 2%;
+            margin-top: 3%;
             width: 50%;
             font-family: $headerFont;
             cursor: pointer;
@@ -150,8 +159,11 @@ $darkPink: rgb(141, 71, 132);
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: $sectionMargin;
+    margin-bottom: $sectionMargin;
     .newsContainer{
         width: 60%;
+        margin-top: $headerMargin;
         .newsItem{
             
             background-color: rgba($darkPink, 0.3);
@@ -163,19 +175,17 @@ $darkPink: rgb(141, 71, 132);
             margin: 1%;
             display: grid;
             grid-template-columns: 50% 50%;
+            font-family: $mainFont;
 
             .newsHeader{
-
-                font-family: $headerFont;
-
             }
 
             .newsDate{
-                font-family: $headerFont;
             }
 
             .newsData{
 
+                margin-top: 2%;
                 grid-column-end: span 2;
             }
         }
@@ -189,32 +199,47 @@ $darkPink: rgb(141, 71, 132);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    margin-top: $sectionMargin;
+    margin-bottom: $sectionMargin;
 
     .descContainer{
 
+        margin-top: $headerMargin;
         display: flex;
         width: 60%;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     
     
         .descItem{
     
+            width: 45%;
+
             .header{
     
                 display: flex;
                 justify-content: space-around;
+                margin-bottom: 5%;
+                width: 65%;
     
                 i{
-                    font-size: 1.5em;
+                    font-size: 2em;
                     color: $darkPink;
                 }
     
                 .descHeader{
-                    font-size: 1.5em;
+                    font-size: 1.4em;
                     font-family: $headerFont;
                 }
+            }
+
+            p{
+                font-family: $mainFont;
+                font-size: 20px;
+                text-align:justify;
+                text-justify:auto;
+                width: 95%;
+                padding: 3%;
             }
         }
     }
@@ -228,45 +253,70 @@ $darkPink: rgb(141, 71, 132);
     justify-content: center;
     height: 30vh;
     width: 100%;
+    margin-top: $sectionMargin;
+    margin-bottom: $sectionMargin;
 
     .conntactContainer{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 40%;
-        margin-top: 1%;
+        margin-top: $headerMargin;
 
-        .conntactHeader{
-            display: flex;
-            padding: 3%;
-        }
+        .conntactInfo{
+            font-family: $mainFont;
+            font-size: 20px;
+            margin-right: 10%;
+            text-align: left;
+            width: 60%;
 
-        i{
-            margin-right: 5%;
-            font-size: 1.5em;
-
-        }
-
-        h3{
-            font-size: 1.3em;
-        }
-
-        .callBtn{
-        
-            background-color: $darkPink;
-            border-radius: 4%;
-            border: none;
-            padding: 2%;
-            width: 20%;
-            font-family: $headerFont;
-            cursor: pointer;
-            margin-left: 5%;
-
-            a{
-                color: black;
-                text-decoration: none;
+            .hoursHeader{
+                font-weight: bolder;
+                margin-top: 2%;
             }
         }
+
+        .numberContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5%;
+
+            .conntactHeader{
+                display: flex;
+                padding: 3%;
+            }
+    
+            i{
+                margin-right: 5%;
+                font-size: 1.7em;
+    
+            }
+    
+            h3{
+                font-size: 1.7em;
+            }
+    
+            .callBtn{
+            
+                background-color: $darkPink;
+                border-radius: 4%;
+                border: none;
+                padding: 9%;
+                width: 80%;
+                font-family: $headerFont;
+                cursor: pointer;
+                margin-top: 10%;
+                margin-left: 20%;
+    
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+       
     }
 }
 
@@ -276,9 +326,12 @@ $darkPink: rgb(141, 71, 132);
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: $sectionMargin;
+    margin-bottom: $sectionMargin;
 
     .mapContainer{
 
+        margin-top: $headerMargin;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -312,6 +365,11 @@ footer{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    font-family: $mainFont;
+
+    p{
+        padding: 1%;
+    }
 }
 
 
@@ -437,24 +495,50 @@ footer{
     .newsSection{
 
         .newsContainer{
-            width: 80%;
+            width: 90%;
         }
     }
 
-    
-    .descContainer{
-        flex-direction: column;
+    .descSection{
         width: 100%;
+       
+        .descContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+
+            .descItem{
+                width: 90%;
+                padding: 5%;
+
+                .header{
+                    width: 75%;
+                }
+            }
+        }
     }
 
     .conntactSection{
         
+        padding: 20%;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
         .conntactContainer{
-            width: 60%;
-            height: 20vh;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+
+            .conntactInfo{
+                margin-right: 0;
+                padding: 5%;
+                width: 100%;
+            }
 
             .conntactHeader{
                 margin-bottom: 5%;

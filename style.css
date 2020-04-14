@@ -70,7 +70,7 @@
 
 .homeBtn i {
   color: black;
-  font-size: 2em;
+  font-size: 2.6em;
   cursor: pointer;
 }
 
@@ -120,6 +120,11 @@
 .homeContainer .leftContainer .nameHeader {
   font-family: "Righteous", cursive;
   font-size: 40px;
+  padding: 2%;
+}
+
+.homeContainer .leftContainer .nameDesc {
+  font-family: "Open Sans", sans-serif;
 }
 
 .homeContainer .leftContainer button {
@@ -128,6 +133,7 @@
   color: black;
   border: none;
   padding: 2%;
+  margin-top: 3%;
   width: 50%;
   font-family: "Righteous", cursive;
   cursor: pointer;
@@ -169,10 +175,13 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .newsSection .newsContainer {
   width: 60%;
+  margin-top: 6vh;
 }
 
 .newsSection .newsContainer .newsItem {
@@ -185,17 +194,11 @@
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-}
-
-.newsSection .newsContainer .newsItem .newsHeader {
-  font-family: "Righteous", cursive;
-}
-
-.newsSection .newsContainer .newsItem .newsDate {
-  font-family: "Righteous", cursive;
+  font-family: "Open Sans", sans-serif;
 }
 
 .newsSection .newsContainer .newsItem .newsData {
+  margin-top: 2%;
   -ms-grid-column-span: 2;
       grid-column-end: span 2;
 }
@@ -214,9 +217,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .descSection .descContainer {
+  margin-top: 6vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,9 +230,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.descSection .descContainer .descItem {
+  width: 45%;
 }
 
 .descSection .descContainer .descItem .header {
@@ -235,16 +245,27 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 5%;
+  width: 65%;
 }
 
 .descSection .descContainer .descItem .header i {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #8d4784;
 }
 
 .descSection .descContainer .descItem .header .descHeader {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-family: "Righteous", cursive;
+}
+
+.descSection .descContainer .descItem p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: auto;
+  width: 95%;
+  padding: 3%;
 }
 
 .conntactSection {
@@ -263,6 +284,8 @@
           justify-content: center;
   height: 30vh;
   width: 100%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .conntactSection .conntactContainer {
@@ -276,37 +299,68 @@
       -ms-flex-align: center;
           align-items: center;
   width: 40%;
-  margin-top: 1%;
+  margin-top: 6vh;
 }
 
-.conntactSection .conntactContainer .conntactHeader {
+.conntactSection .conntactContainer .conntactInfo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin-right: 10%;
+  text-align: left;
+  width: 60%;
+}
+
+.conntactSection .conntactContainer .conntactInfo .hoursHeader {
+  font-weight: bolder;
+  margin-top: 2%;
+}
+
+.conntactSection .conntactContainer .numberContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+}
+
+.conntactSection .conntactContainer .numberContainer .conntactHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 3%;
 }
 
-.conntactSection .conntactContainer i {
+.conntactSection .conntactContainer .numberContainer i {
   margin-right: 5%;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
-.conntactSection .conntactContainer h3 {
-  font-size: 1.3em;
+.conntactSection .conntactContainer .numberContainer h3 {
+  font-size: 1.7em;
 }
 
-.conntactSection .conntactContainer .callBtn {
+.conntactSection .conntactContainer .numberContainer .callBtn {
   background-color: #8d4784;
   border-radius: 4%;
   border: none;
-  padding: 2%;
-  width: 20%;
+  padding: 9%;
+  width: 80%;
   font-family: "Righteous", cursive;
   cursor: pointer;
-  margin-left: 5%;
+  margin-top: 10%;
+  margin-left: 20%;
 }
 
-.conntactSection .conntactContainer .callBtn a {
+.conntactSection .conntactContainer .numberContainer .callBtn a {
   color: black;
   text-decoration: none;
 }
@@ -325,9 +379,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .mapSection .mapContainer {
+  margin-top: 6vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,6 +430,11 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer p {
+  padding: 1%;
 }
 
 @media screen and (max-width: 768px) {
@@ -499,18 +561,44 @@ footer {
     height: 40%;
   }
   .newsSection .newsContainer {
-    width: 80%;
+    width: 90%;
   }
-  .descContainer {
+  .descSection {
+    width: 100%;
+  }
+  .descSection .descContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+  }
+  .descSection .descContainer .descItem {
+    width: 90%;
+    padding: 5%;
+  }
+  .descSection .descContainer .descItem .header {
+    width: 75%;
+  }
+  .conntactSection {
+    padding: 20%;
+    height: 100vh;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .conntactSection .conntactContainer {
-    width: 60%;
-    height: 20vh;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -521,6 +609,14 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .conntactSection .conntactContainer .conntactInfo {
+    margin-right: 0;
+    padding: 5%;
+    width: 100%;
   }
   .conntactSection .conntactContainer .conntactHeader {
     margin-bottom: 5%;
