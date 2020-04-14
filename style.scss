@@ -115,6 +115,7 @@ $headerMargin: 6vh;
 
         .nameDesc{
             font-family: $mainFont;
+        
         }
 
         button{
@@ -220,7 +221,7 @@ $headerMargin: 6vh;
                 display: flex;
                 justify-content: space-around;
                 margin-bottom: 5%;
-                width: 65%;
+                width: 75%;
     
                 i{
                     font-size: 2em;
@@ -471,7 +472,7 @@ footer{
         flex-direction: column-reverse;
         justify-content: center;
         .leftContainer{
-            width: 90%;
+            width: 100%;
             margin-bottom: 10vh;
             padding: 5%;
             .nameHeader{
@@ -540,12 +541,16 @@ footer{
                 width: 100%;
             }
 
-            .conntactHeader{
-                margin-bottom: 5%;
-            }
-            .callBtn{
-                width: 40%;
-                padding: 5%;
+            .numberContainer{
+
+                .conntactHeader{
+                    margin-bottom: 5%;
+                }
+                .callBtn{
+                    width: 80%;
+                    padding: 10%;
+                    margin-top: 20%;
+                }
             }
         }
     }
@@ -571,6 +576,7 @@ footer{
                margin-top: 15%;
                padding: 4%;
                width: 30%;
+
            }
         }
     }    

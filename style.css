@@ -246,7 +246,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 5%;
-  width: 65%;
+  width: 75%;
 }
 
 .descSection .descContainer .descItem .header i {
@@ -539,7 +539,7 @@ footer p {
             justify-content: center;
   }
   .homeContainer .leftContainer {
-    width: 90%;
+    width: 100%;
     margin-bottom: 10vh;
     padding: 5%;
   }
@@ -618,12 +618,13 @@ footer p {
     padding: 5%;
     width: 100%;
   }
-  .conntactSection .conntactContainer .conntactHeader {
+  .conntactSection .conntactContainer .numberContainer .conntactHeader {
     margin-bottom: 5%;
   }
-  .conntactSection .conntactContainer .callBtn {
-    width: 40%;
-    padding: 5%;
+  .conntactSection .conntactContainer .numberContainer .callBtn {
+    width: 80%;
+    padding: 10%;
+    margin-top: 20%;
   }
   .mapSection {
     margin-bottom: 10%;
