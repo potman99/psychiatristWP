@@ -30,6 +30,7 @@ $headerMargin: 6vh;
     height: 10vh;
     display: flex;
     justify-content: flex-end;
+    
 
     ul{
         display: flex;
@@ -178,12 +179,7 @@ $headerMargin: 6vh;
             grid-template-columns: 50% 50%;
             font-family: $mainFont;
 
-            .newsHeader{
-            }
-
-            .newsDate{
-            }
-
+        
             .newsData{
 
                 margin-top: 2%;
@@ -237,8 +233,6 @@ $headerMargin: 6vh;
             p{
                 font-family: $mainFont;
                 font-size: 20px;
-                text-align:justify;
-                text-justify:auto;
                 width: 95%;
                 padding: 3%;
             }
@@ -475,8 +469,14 @@ footer{
             width: 100%;
             margin-bottom: 10vh;
             padding: 5%;
+            font-size: 13px;
             .nameHeader{
                 font-size: 30px;
+            }
+
+            #btnMore{
+                margin-top: 7%;
+                padding: 3%;
             }
         }
 
@@ -514,43 +514,43 @@ footer{
                 padding: 5%;
 
                 .header{
-                    width: 75%;
+                    width: 95%;
+                    font-size: 16px;
                 }
             }
         }
     }
 
     .conntactSection{
-        
-        padding: 20%;
-        height: 100vh;
-        width: 100%;
         display: flex;
-        justify-content: center;
+        width: 100%;
+        margin-top: 40%;
+        margin-bottom: 45%;
+        align-items: center;
 
         .conntactContainer{
-            width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            width: 80%;
+            align-content: center;
 
             .conntactInfo{
-                margin-right: 0;
-                padding: 5%;
+                display: flex;
+                flex-direction: column;
                 width: 100%;
+                margin: 0;
+                align-items: center;
+                p{
+                    width: 80%;
+                }
             }
 
             .numberContainer{
-
-                .conntactHeader{
-                    margin-bottom: 5%;
-                }
+                
                 .callBtn{
-                    width: 80%;
-                    padding: 10%;
-                    margin-top: 20%;
-                }
+                    margin: 0;
+                    margin-top: 14%;
+                };
             }
         }
     }
@@ -582,6 +582,7 @@ footer{
     }    
     
 }
+
 
 
 // Animations
