@@ -3,6 +3,7 @@ $headerFont:  'Righteous', cursive;
 $mainFont: 'Open Sans', sans-serif;
 $darkPink: rgb(141, 71, 132);
 $sectionMargin: 10vh;
+$mobileMargin:10%;
 $headerMargin: 6vh;
 
 
@@ -465,6 +466,7 @@ footer{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
+        margin-bottom: $mobileMargin;
         .leftContainer{
             width: 100%;
             margin-bottom: 10vh;
@@ -494,6 +496,8 @@ footer{
     }
 
     .newsSection{
+        margin-top: $mobileMargin;
+        margin-bottom: $mobileMargin;
 
         .newsContainer{
             width: 90%;
@@ -502,6 +506,8 @@ footer{
 
     .descSection{
         width: 100%;
+        margin-top: $mobileMargin;
+        margin-bottom: $mobileMargin;
        
         .descContainer{
             display: flex;
@@ -524,8 +530,9 @@ footer{
     .conntactSection{
         display: flex;
         width: 100%;
-        margin-top: 40%;
-        margin-bottom: 45%;
+        height: 100%;
+        margin-top: $mobileMargin;
+        margin-bottom: $mobileMargin;
         align-items: center;
 
         .conntactContainer{
@@ -547,6 +554,7 @@ footer{
 
             .numberContainer{
                 
+                padding: 6%;
                 .callBtn{
                     margin: 0;
                     margin-top: 14%;
@@ -556,8 +564,8 @@ footer{
     }
 
     .mapSection{
-        margin-bottom: 10%;
-        margin-top: 10%;
+        margin-top: $mobileMargin;
+        margin-bottom: $mobileMargin;
         display: flex;
         width: 100%;
         .mapContainer{

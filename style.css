@@ -535,6 +535,7 @@ footer p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 10%;
   }
   .homeContainer .leftContainer {
     width: 100%;
@@ -563,11 +564,17 @@ footer p {
     width: 50%;
     height: 40%;
   }
+  .newsSection {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
   .newsSection .newsContainer {
     width: 90%;
   }
   .descSection {
     width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
   .descSection .descContainer {
     display: -webkit-box;
@@ -595,8 +602,9 @@ footer p {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    margin-top: 40%;
-    margin-bottom: 45%;
+    height: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -630,13 +638,16 @@ footer p {
   .conntactSection .conntactContainer .conntactInfo p {
     width: 80%;
   }
+  .conntactSection .conntactContainer .numberContainer {
+    padding: 6%;
+  }
   .conntactSection .conntactContainer .numberContainer .callBtn {
     margin: 0;
     margin-top: 14%;
   }
   .mapSection {
-    margin-bottom: 10%;
     margin-top: 10%;
+    margin-bottom: 10%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
